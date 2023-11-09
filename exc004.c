@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int fatorial(int num);
+
 int main(void)
 {
     int num;
