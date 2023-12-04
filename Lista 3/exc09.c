@@ -13,11 +13,38 @@ decrescente. Dado o vetor da questão anterior, faça uma função para ordenar 
 por meio de ponteiros. */
 #include <stdio.h>
 
+// Declaração dos protótipos das funções:
+void ordenar(double *vetor_a);
+void imprimir(double *vetor_a);
+
+int main(void)
+{
+    // Declaração de variáveis:
+    double vet_a[11];
+    int i;
+
+    // Solicitar e armazenar os valores do vetor:
+    printf("\t___ORDENAR O VETOR___\n");
+    printf("Digite 10 valores reais: ");
+    for (int i = 0; i < 11; i++)
+    {
+        scanf("%lf", &vet_a[i]); // Armazenar...
+    }
+
+    ordenar(vet_a);  // Chamada da função ordenar();
+    imprimir(vet_a); // Chamada da função imprimir().
+
+    return (0);
+}
+
+// Função que realiza a ordenação do vetor por meio de ponteiros:
 void ordenar(double *vetor_a)
 {
+    // Declaração de variáveis:
     int i, j;
     double aux = 0;
 
+    // Verifica e ordena os valores em ordem crescente:
     for (i = 0; i < 11; i++)
     {
         for (j = (i + 1); j < 11; j++)
@@ -30,6 +57,8 @@ void ordenar(double *vetor_a)
             }
         }
     }
+
+    // Ordena os valores em ordem decrescente após o sexto elemento:
     for (i = 10; i >= 5; i--)
     {
         for (j = (i - 1); j >= 5; j--)
@@ -44,29 +73,17 @@ void ordenar(double *vetor_a)
     }
 }
 
+// Função para a impressão dos valores do vetor:
 void imprimir(double *vetor_a)
 {
+    // Declaração de variável:
     int i;
 
-    printf("A: \n");
+    // Imprimir os valores do vetor:
+    printf("\n\t__VETOR ORDENADO__\n");
     for (i = 0; i < 10; i++)
     {
         printf("%.2lf  ", vetor_a[i]);
     }
-}
-int main(void)
-{
-    double vet_a[11];
-    int i;
-
-    printf("Digite 10 valores reais: ");
-    for (int i = 0; i < 11; i++)
-    {
-        scanf("%lf", &vet_a[i]);
-    }
-
-    ordenar(vet_a);
-    imprimir(vet_a);
-
-    return(0);
+    printf("\n");
 }

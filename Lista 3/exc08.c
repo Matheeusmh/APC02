@@ -12,14 +12,40 @@ final escreva os elementos do vetor ordenado com o uso da função imprima(). Ut
 acessar os elementos do vetor nas funções. */
 #include <stdio.h>
 
+// Declaração dos protótipos das funções:
+void ordena(float *vetor);
+void imprima(float *vetor);
+
+int main(void)
+{
+    // Declaração de variáveis:
+    float vet[10];
+    int i;
+
+    // Solicitar e armazenar os valores do vetor:
+    printf("\t___ORDENAR OS VALORES DE UM VETOR___\n");
+    printf("Digite os 10 valores reais: ");
+    for (i = 0; i < 10; i++)
+    {
+        scanf("%f", &vet[i]); // Armazenar...
+    }
+
+    ordena(vet);  // Chamada da função ordena();
+    imprima(vet); // Chamada da função imprima().
+
+    return (0);
+}
+// Função que organiza em ordem crescentes os valores reais:
 void ordena(float *vetor)
 {
+    // Declaração de variáveis:
     int i, j, z;
     float aux = 0;
 
+    // Colocar em ordem crescente os valores do vetor:
     for (i = 0; i < 10; i++)
     {
-        for (j = i + 1; j < 10; j++)
+        for (j = i + 1; j < 10; j++) // Compara os valores de posições acima do i:
         {
             z = i;
             if (*(vetor + i) > *(vetor + j))
@@ -32,30 +58,17 @@ void ordena(float *vetor)
     }
 }
 
+// Função para imprimir o vetor:
 void imprima(float *vetor)
 {
+    // Declaração de variável:
     int i;
 
-    printf("\nVETOR ORDENADO:\n");
+    // Imprime os valores do vetor:
+    printf("\n\t__VETOR ORDENADO__\n");
     for (i = 0; i < 10; i++)
     {
         printf("%.2f  ", *(vetor + i));
     }
-}
-
-int main(void)
-{
-    float vet[10];
-    int i;
-
-    printf("Digite os 10 valores reais: ");
-    for (i = 0; i < 10; i++)
-    {
-        scanf("%f", &vet[i]);
-    }
-
-    ordena(vet);
-    imprima(vet);
-
-    return (0);
+    printf("\n");
 }

@@ -1,3 +1,4 @@
+// Realizar o cálculo do fatorial com resursão:
 #include <stdio.h>
 
 int fatorial(int resultado);

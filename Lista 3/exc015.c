@@ -1,4 +1,3 @@
-
 /*-------------------------------------------------------------------------
 Aluno: Matheus Henrique de Andrade Pires
 Matrícula: 202301138
@@ -11,39 +10,35 @@ Data de criação: 22/11/2023
 15. Construa um programa que receba da linha de comando, por meio do argc argv, um número inteiro e
 retorne seu fatorial na saída padrão, o qual é calculado por uma função denominada fat(). O número deve
 ser enviado e manipulado na função como ponteiro. */
-
 #include <stdio.h>
 #include <stdlib.h>
 
-int fat(int *num)
+// Declaração do protótipo da função:
+int fat(int num, int *resultado);
+
+int main(int argc, char *argv[])
 {
-    if (*num == 1)
+    // Declaração de variáveis:
+    int num = atoi(argv[1]), resultado = 1;
+
+    fat(num, &resultado); // Chamada da função fat().
+
+    printf("Fatorial: %d\n", resultado); // Imprimir o fatorial do valor de entrada.
+
+    return (0);
+}
+
+// Função para calcular o fatorial com o uso de ponteiros e recursão:
+int fat(int num, int *resultado)
+{
+    // Condição para dar inicio a recursão:
+    if (num == 1 || num == 0)
     {
         return 1;
     }
     else
     {
-        return (*num *= fat(&(*(num - 1))));
+        *resultado *= num;
+        fat(num - 1, resultado);
     }
-}
-
-
-/*int main(int argc, char *argv[])
-{
-    int num = atoi(argv[1]);
-
-    fat(&num);
-
-    printf("%d", num);
-}*/
-
-int main(void)
-{
-    int num;
-
-    scanf("%d", &num);
-    fat(&num);
-    printf("%d", num);
-
-    return(0);
 }

@@ -15,12 +15,13 @@ de parâmetros e para datas não válidas (28 08 2022). */
 
 int main(int argc, char *argv[])
 {
-    char *meses[] = {"janeiro", "fevereiro", "marco", "abril", "maio", "junho", "julho",
-                     "agosto", "setembro", "outubro", "novembro", "dezembro"};
-    int dia = atoi(argv[1]);
-    int mes = atoi(argv[2]);
-    int ano = atoi(argv[3]);
+    // Declaração de variáveis:
+    char *meses[] = {"janeiro", "fevereiro", "marco", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"};
+    int dia = atoi(argv[1]); // Convertendo o caracter para inteiro;
+    int mes = atoi(argv[2]); // Convertendo o caracter para inteiro;
+    int ano = atoi(argv[3]); // Convertendo o caracter para inteiro;
 
+    // Condição para invalidar datas inexistentes e imprimir as válidas:
     if (dia > 31 || dia <= 0 || ano < 0 || mes > 12 || mes < 0)
     {
         printf("ERRO! Informacoes invalidas...\n");
@@ -32,8 +33,3 @@ int main(int argc, char *argv[])
 
     return (0);
 }
-
-{
-    if (*num == 1)
-    {
-       

@@ -12,11 +12,41 @@ guardando-os num vetor. Por meio da função ordena() e com o uso de ponteiros o
 que ele for digitado. Mostre ao final na tela os valores em ordem, por meio da função imprime().*/
 #include <stdio.h>
 
+// Declaração dos protótipos das funções:
+void ordena(double *vetor, int *count, double *vetor_ordenado);
+void imprime(double *vetor_ordenado);
+
+int main(void)
+{
+    // Declaração de variáveis:
+    double vet[10], vetor_ordenado[10];
+    int i;
+
+    // Solicitar e armazenar os valores do vetor:
+    printf("\t___ORDENAR OS VALORES DE UM VETOR___\n");
+    printf("Digite 10 valores numericos: ");
+    for (i = 0; i < 10; i++)
+    {
+        scanf("%lf", &vet[i]); // Armazenar...
+        if (i > 0)
+        {
+            ordena(vet, &i, vetor_ordenado); // Ordenar assim que for digitado pela função ordena().
+        }
+    }
+
+    imprime(vetor_ordenado); // Chamada da função imprime.
+
+    return (0);
+}
+
+// Função que ordena de forma crescente um elemento dentro do vetor:
 void ordena(double *vetor, int *count, double *vetor_ordenado)
 {
+    // Declaração de variáveis:
     int i, j;
     double aux;
 
+    // Ordena o vetor de forma crescente:
     for (i = 0; i <= *count; i++)
     {
         for (j = (i + 1); j <= *count; j++)
@@ -32,32 +62,16 @@ void ordena(double *vetor, int *count, double *vetor_ordenado)
     }
 }
 
+// Função para impressão dos elementos do vetor em ordem crescente:
 void imprime(double *vetor_ordenado)
 {
+    // Declaração de variável:
     int i;
 
-    printf("\nA:\n");
+    printf("\n\t__VETOR ORDENADO__\n");
     for (i = 0; i < 10; i++)
     {
         printf("%.2lf  ", *(vetor_ordenado + i));
     }
-}
-int main(void)
-{
-    double vet[10], vetor_ordenado[10];
-    int i;
-
-    printf("Digite 10 valores numericos: ");
-    for (i = 0; i < 10; i++)
-    {
-        scanf("%lf", &vet[i]);
-        if (i > 0)
-        {
-            ordena(vet, &i, vetor_ordenado);
-        }
-    }
-
-    imprime(vetor_ordenado);
-
-    return (0);
+    printf("\n");
 }
