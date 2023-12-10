@@ -12,7 +12,7 @@ Fibonacci */
 #include <stdio.h>
 
 // Declaração do protótipo da função:
-int fibonacci(int *seq_fibonacci, int tamanho);
+void fibonacci(int *seq_fibonacci, int tamanho);
 
 int main(void)
 {
@@ -20,34 +20,37 @@ int main(void)
     int tamanho;
 
     // Solicitar e armazenar o número de elementos da sequência:
-    printf("___SEQUENCIA DE FIBONACCI___\n");
+    printf("\t___SEQUENCIA DE FIBONACCI___\n");
     printf("Digite o numero de termos da sequencia: ");
     scanf("%d", &tamanho); // Armazenando...
     
-    int seq_fibonacci[tamanho]; // Declaração da variável.
+    int seq_fibonacci[tamanho + 1]; // Declaração da variável.
 
-    fibonacci(seq_fibonacci, tamanho); // Chamada da função fibonacci().
+    printf("\n\t__FIBONACCI__\n");
+    fibonacci(seq_fibonacci, tamanho + 1); // Chamada da função fibonacci().
 
     return (0);
 }
 
-// Função para imprimir a sequência de Fibonacci:
-int fibonacci(int *seq_fibonacci, int tamanho)
+// Função recursiva para imprimir a sequência de Fibonacci:
+void fibonacci(int *seq_fibonacci, int tamanho)
 {
-    // Declaração da variável:
-    int i = 0;
-
-    for (; i < tamanho; i++)
+    if (tamanho == 0) // Condição de parada.
     {
-        if (i == 0 || i == 1)
-        {
-            *(seq_fibonacci + i) = i;
-            printf("%d  ", i);
-        }
-        else
-        {
-            *(seq_fibonacci + i) = *(seq_fibonacci + (i - 1)) + *(seq_fibonacci + (i - 2));
-            printf("%d  ", *(seq_fibonacci + i));
-        }
+        *seq_fibonacci = tamanho; // Atribuição de valor.
+        printf("%d ", *seq_fibonacci); // Imprimir o valor da sequência.
+    }
+    else if (tamanho == 1) 
+    {
+        fibonacci(seq_fibonacci - 1, tamanho - 1); // Chamada da função fibonacci().
+        *seq_fibonacci = tamanho; // Atribuição de valor.
+        printf("%d ", *seq_fibonacci); // Imprimir o valor da sequência.
+
+    }
+    else
+    {
+        fibonacci(seq_fibonacci - 1, tamanho - 1); // Chamada da função fibonacci().
+        *seq_fibonacci = *(seq_fibonacci - 1) + *(seq_fibonacci - 2); // Calcular o atual valor da sequência.
+        printf("%d ", *seq_fibonacci); // Imprimir o valor da sequência.
     }
 }
