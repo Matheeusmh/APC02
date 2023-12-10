@@ -13,34 +13,41 @@ seus antecessores pares e com ele, se ele for par.
 – Ex.: n=4 soma-se: 2+4=6; n=6 soma-se: 2+4+6=12 */
 #include <stdio.h>
 
+// Declaração do protótipo da função:
 int soma_par(int num, int *soma);
 
 int main(void)
 {
+    // Declaração de variáveis:
     int num, soma;
 
-    printf("Digite um valor inteiro: ");
-    scanf("%d", &num);
+    // Solicitar e armazenar o valor de num:
+    printf("\t___SOMAR OS VALORES PARES ANTECESSORES___\n");
+    printf(" Digite um valor inteiro: ");
+    scanf("%d", &num); // Armazenando...
 
-    soma_par(num, &soma);
+    soma_par(num, &soma); // Chamada da função soma_par().
 
-    printf("Soma = %d", soma);
+    printf(" A soma dos antecessores pares eh: %d \n", soma); // Imprimir o resultado da soma dos antecessores de num.
 
     return (0);
 }
 
+// Função para somar os valores pares antecessores de num e o próprio se for par:
 int soma_par(int num, int *soma)
 {
-    if (num == 0)
+
+    if (num == 0) // Condição de parada da chamada de função:
     {
-        return 0;
+        return 0; // Retorno do valor de num.
     }
     else
     {
-        if (num % 2 == 0)
+        soma_par(num - 1, soma); // Chamada da função soma_par.
+
+        if (num % 2 == 0) // Condição para ser par:
         {
-            *soma += num;
+            *soma += num; // Armazenar os valores pares somados em uma variável na volta da recursão.
         }
-        soma_par(num - 1, soma);
     }
 }

@@ -11,23 +11,30 @@ Data de criação: 10/11/2023
 Fibonacci */
 #include <stdio.h>
 
+// Declaração do protótipo da função:
 int fibonacci(int *seq_fibonacci, int tamanho);
+
 int main(void)
 {
+    // Declaração de variáveis:
     int tamanho;
 
+    // Solicitar e armazenar o número de elementos da sequência:
+    printf("___SEQUENCIA DE FIBONACCI___\n");
     printf("Digite o numero de termos da sequencia: ");
-    scanf("%d", &tamanho);
+    scanf("%d", &tamanho); // Armazenando...
     
-    int seq_fibonacci[tamanho];
+    int seq_fibonacci[tamanho]; // Declaração da variável.
 
-    fibonacci(seq_fibonacci, tamanho);
+    fibonacci(seq_fibonacci, tamanho); // Chamada da função fibonacci().
 
     return (0);
 }
 
+// Função para imprimir a sequência de Fibonacci:
 int fibonacci(int *seq_fibonacci, int tamanho)
 {
+    // Declaração da variável:
     int i = 0;
 
     for (; i < tamanho; i++)
