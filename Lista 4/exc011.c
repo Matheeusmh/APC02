@@ -5,7 +5,7 @@ Turma:  IBT0007 - ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES 2 (2023 .2 - TA)
         IBT0209 - LABORATÓRIO DE PROGRAMAÇÃO 2 (2023 .2 - TA)
 Curso: Ciência da Computação
 UFCAT - Universidade Federal de Catalão
-Data de criação: 10/11/2023
+Data de criação: 10/12/2023
 ---------------------------------------------------------------------------
 11) Critique a função abaixo. Ela promete encontrar o
 valor de um elemento máximo de v[0..n-1].*/
@@ -31,4 +31,4 @@ int MaximoR1(int v[], int n)
     else
         return x; // Retorno do elemento com maior valor.
 }
-// O código não é o mais eficiente mais realiza a função desejada.
+// O código não é o mais eficiente, mas realiza a função desejada.

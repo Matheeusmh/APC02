@@ -37,7 +37,7 @@ int main(void)
 int soma_par(int num, int *soma)
 {
 
-    if (num == 0) // Condição de parada da chamada de função:
+    if (num == 0) // Condição de parada da chamada de função.
     {
         return 0; // Retorno do valor de num.
     }
