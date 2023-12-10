@@ -1,3 +1,4 @@
+/* Faça uma rotina recursiva para calcular a somatória de todos os número de 1 a N (N será lido do teclado). */
 #include <stdio.h>
 
 int soma(int num);
@@ -6,10 +7,10 @@ int main(void)
 {
     int num;
 
-    printf("Digite um numero para somar com os seus anteriores: ");
+    printf("Digite um valor inteiro: ");
     scanf("%d", &num);
 
-    printf("%d", soma(num));
+    printf("A soma de n e seus antecessores eh: %d\n", soma(num));
 
     return (0);
 }

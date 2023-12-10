@@ -1,8 +1,30 @@
-/* 1) Faça um programa que dado um número n,
-informado pelo usuário, faça a soma com todos os
-seus antecessores pares e com ele, se ele for par.
-– Ex.: n=4 soma-se: 2+4=6; n=6 soma-se: 2+4+6=12 */
+/*-------------------------------------------------------------------------
+Aluno: Matheus Henrique de Andrade Pires
+Matrícula: 202301138
+Turma:  IBT0007 - ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES 2 (2023 .2 - TA)
+        IBT0209 - LABORATÓRIO DE PROGRAMAÇÃO 2 (2023 .2 - TA)
+Curso: Ciência da Computação
+UFCAT - Universidade Federal de Catalão
+Data de criação: 10/11/2023
+---------------------------------------------------------------------------
+2) Faça um programa para imprimir a sequência de 
+Fibonacci */
 #include <stdio.h>
+
+int fibonacci(int *seq_fibonacci, int tamanho);
+int main(void)
+{
+    int tamanho;
+
+    printf("Digite o numero de termos da sequencia: ");
+    scanf("%d", &tamanho);
+    
+    int seq_fibonacci[tamanho];
+
+    fibonacci(seq_fibonacci, tamanho);
+
+    return (0);
+}
 
 int fibonacci(int *seq_fibonacci, int tamanho)
 {
@@ -21,17 +43,4 @@ int fibonacci(int *seq_fibonacci, int tamanho)
             printf("%d  ", *(seq_fibonacci + i));
         }
     }
-}
-int main(void)
-{
-    int tamanho;
-
-    printf("Digite o numero de termos da sequencia: ");
-    scanf("%d", &tamanho);
-    
-    int seq_fibonacci[tamanho];
-
-    fibonacci(seq_fibonacci, tamanho);
-
-    return (0);
 }

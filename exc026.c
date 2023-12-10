@@ -1,18 +1,6 @@
 #include <stdio.h>
 
-int soma(int num, int *resultado)
-{
-    if (num == 1)
-    {
-        *resultado += num;
-        return 1;
-    }
-    else
-    {
-        soma(num - 1, resultado);
-        *resultado += num;
-    }
-}
+int soma(int num, int *resultado);
 
 int main(void)
 {
@@ -26,4 +14,18 @@ int main(void)
     printf("%d", resultado);
 
     return (0);
+}
+
+int soma(int num, int *resultado)
+{
+    if (num == 1)
+    {
+        *resultado += num;
+        return 1;
+    }
+    else
+    {
+        soma(num - 1, resultado);
+        *resultado += num;
+    }
 }
