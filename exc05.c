@@ -1,5 +1,4 @@
-/* 5
-. Ler um conjunto de números reais, armazenando-os em vetor, enviá-los para a
+/* 05. Ler um conjunto de números reais, armazenando-os em vetor, enviá-los para a
 função quadrado() e calcular o quadrado de cada número, armazenando o
 resultado em outro vetor. Os vetores têm 10 elementos cada. Imprimir todos
 os vetores por meio da função imprimir(). */
