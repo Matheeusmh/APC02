@@ -1,4 +1,4 @@
-/* 06. Troque o valor de A = 1 e B = 0 em uma função usando ponteiros. Imprima o resultado. */
+/* 16. Troque o valor de A = 1 e B = 0 em uma função usando ponteiros. Imprima o resultado. */
 #include <stdio.h>
 
 void troca(int *a, int *b);
