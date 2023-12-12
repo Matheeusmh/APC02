@@ -7,50 +7,47 @@ Curso: Ciência da Computação
 UFCAT - Universidade Federal de Catalão
 Data de criação: 10/12/2023
 ---------------------------------------------------------------------------
-2) Faça um programa para imprimir a sequência de 
+2) Faça um programa para imprimir a sequência de
 Fibonacci */
 #include <stdio.h>
 
 // Declaração do protótipo da função:
-void fibonacci(int *seq_fibonacci, int tamanho);
+int fibonacci(int tamanho);
 
 int main(void)
 {
     // Declaração de variáveis:
-    int tamanho;
+    int tamanho, i;
 
     // Solicitar e armazenar o número de elementos da sequência:
     printf("\t___SEQUENCIA DE FIBONACCI___\n");
     printf("Digite o numero de termos da sequencia: ");
     scanf("%d", &tamanho); // Armazenando...
-    
-    int seq_fibonacci[tamanho + 1]; // Declaração da variável.
 
+    // Imprimindo os termos da sequência:
     printf("\n\t__FIBONACCI__\n");
-    fibonacci(seq_fibonacci, tamanho + 1); // Chamada da função fibonacci().
+    for (i = 0; i < tamanho; i++)
+    {
+        printf("%d ", fibonacci(i)); // Chamada da recursão fibonacci() para calcular a sequência.
+    }
+    printf("\n");
 
     return (0);
 }
 
 // Função recursiva para imprimir a sequência de Fibonacci:
-void fibonacci(int *seq_fibonacci, int tamanho)
+int fibonacci(int tamanho)
 {
-    if (tamanho == 0) // Condição de parada.
+    if (tamanho == 1) // Condição de parada.
     {
-        *seq_fibonacci = tamanho; // Atribuição de valor.
-        printf("%d ", *seq_fibonacci); // Imprimir o valor da sequência.
+        return 1;
     }
-    else if (tamanho == 1) 
+    else if (tamanho == 0) // Condição de parada.
     {
-        fibonacci(seq_fibonacci - 1, tamanho - 1); // Chamada da função fibonacci().
-        *seq_fibonacci = tamanho; // Atribuição de valor.
-        printf("%d ", *seq_fibonacci); // Imprimir o valor da sequência.
-
+        return 0;
     }
     else
     {
-        fibonacci(seq_fibonacci - 1, tamanho - 1); // Chamada da função fibonacci().
-        *seq_fibonacci = *(seq_fibonacci - 1) + *(seq_fibonacci - 2); // Calcular o atual valor da sequência.
-        printf("%d ", *seq_fibonacci); // Imprimir o valor da sequência.
+        return fibonacci(tamanho - 1) + fibonacci(tamanho - 2); // Chamada da função fibonacci() para calcular durante a recursão.
     }
 }
