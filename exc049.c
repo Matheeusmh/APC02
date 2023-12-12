@@ -1,4 +1,4 @@
-/* 56. Escreva uma função recursiva que produza o 
+/* 49. Escreva uma função recursiva que produza o 
 reverso de um string, reverse(char s[]).
  */
 #include <stdio.h>

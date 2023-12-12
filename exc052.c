@@ -1,4 +1,4 @@
-/* 55. Fazer uma função recursiva que conta o número
+/* 52. Fazer uma função recursiva que conta o número
 de ocorrências de um determinado caracter,
 caract(char c, char s[]). */
 #include <stdio.h>

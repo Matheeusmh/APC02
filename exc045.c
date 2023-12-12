@@ -1,4 +1,4 @@
-/* 48. Faça um programa que dado um número n,
+/* 45. Faça um programa que dado um número n,
 informado pelo usuário, faça a soma com todos os
 seus antecessores pares e com ele, se ele for par.
 – Ex.: n=4 soma-se: 2+4=6; n=6 soma-se: 2+4+6=12 */

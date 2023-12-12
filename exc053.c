@@ -1,4 +1,4 @@
-/* 54. Escrever uma função recursiva que retorna o
+/* 53. Escrever uma função recursiva que retorna o
 tamanho de um string, tamstring(char s[]). */
 #include <stdio.h>
 

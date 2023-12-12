@@ -1,4 +1,4 @@
-/* 51. Implemente uma função recursiva que faça a
+/* 47. Implemente uma função recursiva que faça a
 soma de N números.
 – Ex.: n=5 soma-se: 5+4+3+2+1=15 */
 #include <stdio.h>

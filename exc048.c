@@ -1,4 +1,4 @@
-/* 49. Faça um programa para imprimir a sequência de
+/* 48. Faça um programa para imprimir a sequência de
 Fibonacci */
 #include <stdio.h>
 

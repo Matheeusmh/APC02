@@ -1,4 +1,4 @@
-/* 52. Escreva uma função recursiva para calcular o
+/* 54. Escreva uma função recursiva para calcular o
 valor de uma base x elevada a um expoente y. */
 #include <stdio.h>
 

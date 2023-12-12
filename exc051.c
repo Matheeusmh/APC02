@@ -1,4 +1,4 @@
-/* 53. Faça uma função recursiva que imprima um
+/* 51. Faça uma função recursiva que imprima um
 inteiro usando recursão. */
 #include <stdio.h>
 #include <stdlib.h>

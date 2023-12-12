@@ -1,4 +1,4 @@
-/* 57. Escreva a versão iterativa da função MaximoR. */
+/* 46. Escreva a versão iterativa da função MaximoR. */
 #include <stdio.h>
 
 // Declaração do protótipo da função:
