@@ -1,32 +1,25 @@
-/* 7. Faça um vetor de tamanho 50 preenchido com o seguinte valor: (i+ 5 ∗
-i)%(i+ 1), sendo i a posição do elemento no vetor. Em seguida, usando a
-função imprima() mostre os valores do vetor. */
+/* 14. Treinando ponteiros... */
 #include <stdio.h>
 
-void imprima(int vet[]);
-
-int main(void)
+int main (void)
 {
-    // Declaração de variável:
-    int vet[50];
+    int numero, *a, **z;
 
-    // Realizar o cálculo:
-    for (int i = 0; i < 50; i++)
-    {
-        vet[i] = (i + 5 * i) % (i + 1);
-    }
+    numero = 55;
+    a = &numero;
+    z = a;
+    
+    printf("\nValor inicial: %d\n", numero);
 
-    imprima(vet); // Chamando a função imprimir.
+    *a = 100;
+
+    printf("\nValor final: %d\n", numero);
+    printf("\nEndereco de ""a"": %d\n", &a);
+    printf("\nEndereco do numero: %d\n", a);
+    printf("\nConteudo do numero: %d\n", *a);
+    printf("\n%d\n", &z);
+    printf("\n%d\n", z);
+    printf("\n%d\n", *z);
 
     return (0);
-}
-
-// Função para imprimir o vetor:
-void imprima(int vet[])
-{
-    for (int i = 0; i < 50; i++)
-    {
-        printf("%d ", vet[i]);
-    }
-    printf("\n");
 }

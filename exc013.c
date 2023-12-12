@@ -1,56 +1,71 @@
-/* 1. Ler um conjunto de números reais, armazenando-os em vetor, enviá-los para a
-função quadrado() e calcular o quadrado de cada número, armazenando o
-resultado em outro vetor. Os vetores têm 10 elementos cada. Imprimir todos
-os vetores por meio da função imprimir(). */
+/* 13. Ler 2 conjuntos de 15 números reais, use a função armazena() para guardar
+cada conjunto em um vetor diferente. Utilizando a função escalar() calcule o
+produto escalar entre eles, dado por x1 ∗ y1 + x2 ∗ y2 + ... + xn ∗ yn. A função
+imprimir() imprimirá, usando ponteiros, os dois vetores e o produto escalar. */
 #include <stdio.h>
-#include <math.h>
 
-int quadrado(float *num, float *elevado);
-int elevado(float *num, float *elevado);
+void armazenar(float *vet1, float *vet2);
+void produto_escalar(float *produto, float *vet1, float *vet2);
+void imprimir(float *vet1, float *vet2, float *produto);
 
 int main(void)
 {
     // Declaração de variáveis:
-    float num[10], elevado[10];
+    float vet1[15], vet2[15], produto = 0;
 
-    // Solicitar a entrada dos 10 valores para o vetor:
-    printf("___CALCULAR O QUADRADO___\n");
-    printf("Digite 10 valores reais: ");
-    for (int i = 0; i < 10; i++)
-    {
-        scanf("%f", &num[i]); // Entrada de dados.
-    }
-
-    // Chamada de funções:
-    quadrado(num, elevado); // Calcular e armazenar os valores ao quadrado;
-    imprimir(num, elevado); // Imprimir o vetor com os valores de entrada e ao quadrado.
+    armazenar(vet1, vet2);                 // Chamando a função armazenar();
+    produto_escalar(&produto, vet1, vet2); // Chamando a função produto_escalar();
+    imprimir(vet1, vet2, &produto);        // Chamando a função imprimir().
 
     return (0);
 }
 
-// Calcula e armazena valores ao quadrado:
-int quadrado(float *num, float *elevado)
+// Função para armazenar os valores dos elementos do primeiro e segundo vetor:
+void armazenar(float *vet1, float *vet2)
 {
-    for (int i = 0; i < 10; i++)
+    // Solicitar e armazenar os 15 valores do primeiro vetor:
+    printf("\t___PRIMEIRO VETOR___\n");
+    printf("Digite 15 valores reais para o primeiro vetor: ");
+    for (int i = 0; i < 15; i++)
     {
-        elevado[i] = pow(num[i], 2); // Elevando valor de entrada ao quadrado.
+        scanf("%f", &vet1[i]); // Armazenar.
+    }
+
+    // Solicitar e armazenar os 15 valores do segundo vetor:
+    printf("\n\t___SEGUNDO VETOR___\n");
+    printf("Digite 15 valores reais para o segundo vetor: ");
+    for (int i = 0; i < 15; i++)
+    {
+        scanf("%f", &vet2[i]); // Armazenar.
     }
 }
 
-// Imprime ambos os vetores(original e ao quadrado):
-int imprimir(float *num, float *elevado)
-{ 
-    // Imprimir o vetor com os valores originais:
-    printf("\n\t__VALORES DIGITADOS__\n");
-    for (int i = 0; i < 10; i++)
+// Função para calcular o produto escalar entre os vetores:
+void produto_escalar(float *produto, float *vet1, float *vet2)
+{
+    for (int i = 0; i < 15; i++)
     {
-        printf("%.2f  ", num[i]);
+        *produto += (vet1[i] * vet2[i]); // Cálculo.
     }
-    // Imprimir o vetor com valores ao quadrado:
-    printf("\n\n\t__VALORES AO QUADRADO__\n");
-    for (int i = 0; i < 10; i++)
+}
+
+// Função para imprimir os vetores e o produto escalar:
+void imprimir(float *vet1, float *vet2, float *produto)
+{
+    // Imprimir o primeiro vetor:
+    printf("\n\t__VETOR 1__\n");
+    for (int i = 0; i < 15; i++)
     {
-        printf("%.2f  ", elevado[i]);
+        printf("%.2f  ", vet1[i]);
     }
-    printf("\n");
+
+    // Imprimir o segundo vetor:
+    printf("\n\n\t__VETOR 2__\n");
+    for (int i = 0; i < 15; i++)
+    {
+        printf("%.2f  ", vet2[i]);
+    }
+
+    // Imprimir o produto escalar:
+    printf("\n\nProduto escalar: %.2f\n", *produto);
 }

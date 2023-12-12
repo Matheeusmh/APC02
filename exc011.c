@@ -1,50 +1,32 @@
-/* 5. Leia um vetor com 20 números inteiros. Crie a função repetidos() para acessar os
-elementos do vetor e imprimir eliminando os números repetidos. */
+/* 11. Faça um vetor de tamanho 50 preenchido com o seguinte valor: (i+ 5 ∗
+i)%(i+ 1), sendo i a posição do elemento no vetor. Em seguida, usando a
+função imprima() mostre os valores do vetor. */
 #include <stdio.h>
 
-void repetidos(int vet[]);
+void imprima(int vet[]);
 
 int main(void)
 {
     // Declaração de variável:
-    int vet[20];
+    int vet[50];
 
-    // Solicitação e entrada dos 20 valores do vetor:
-    printf("___ELIMINANDO REPETIDOS___\n");
-    printf("Digite 20 valores numericos: ");
-    for (int i = 0; i < 20; i++)
+    // Realizar o cálculo:
+    for (int i = 0; i < 50; i++)
     {
-        scanf("%d", &vet[i]); // Armazenar.
+        vet[i] = (i + 5 * i) % (i + 1);
     }
 
-    repetidos(vet); // Chamando a função repetidos().
+    imprima(vet); // Chamando a função imprimir.
 
     return (0);
 }
 
-// Função para imprimir os valores do vetor eliminando os repetidos:
-void repetidos(int vet[])
+// Função para imprimir o vetor:
+void imprima(int vet[])
 {
-    // Declaração de variáveis:
-    int count = 0;
-
-    // Imprimir os valores eliminando os repetidos:
-    printf("\n __SEM REPETIDOS__\n ");
-    for (int i = 0; i < 20; i++)
+    for (int i = 0; i < 50; i++)
     {
-        count = 0;
-        for (int j = i - 1; j >= 0; j--)
-        {
-            if (vet[i] == vet[j]) // Verificar se o valor é repetido;
-            {
-                count++;
-                break;
-            }
-        }
-        if (count == 0) // Verificando se o valor já foi impresso.
-        {
-            printf("%d ", vet[i]);
-        }
+        printf("%d ", vet[i]);
     }
     printf("\n");
 }
