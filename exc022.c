@@ -31,3 +31,4 @@ void calcular_distancia(float *p, float *q, float *distancia)
 {
     *distancia = sqrt(pow((*q++ - *p++), 2) + pow((*q - *p), 2)); // Cálculo da distância entre dois pontos.
 }
+ 

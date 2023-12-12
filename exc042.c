@@ -1,4 +1,4 @@
-/* 39. Leia um vetor com 10 números reais, ordene os elementos deste vetor utilizando a função ordena() e no
+/* 42. Leia um vetor com 10 números reais, ordene os elementos deste vetor utilizando a função ordena() e no
 final escreva os elementos do vetor ordenado com o uso da função imprima(). Utilize ponteiros para
 acessar os elementos do vetor nas funções. */
 #include <stdio.h>

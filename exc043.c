@@ -1,4 +1,4 @@
-/* 42. Escreva um programa que leia um número inteiro positivo n e em seguida imprima n linhas do chamado
+/* 43. Escreva um programa que leia um número inteiro positivo n e em seguida imprima n linhas do chamado
 Triângulo de Pascal. */
 #include <stdio.h>
 

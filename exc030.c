@@ -1,4 +1,4 @@
-/* 46. Construa um programa que receba da linha de comando, por meio do argc argv, um número inteiro e
+/* 30. Construa um programa que receba da linha de comando, por meio do argc argv, um número inteiro e
 retorne seu fatorial na saída padrão, o qual é calculado por uma função denominada fat(). O número deve
 ser enviado e manipulado na função como ponteiro. */
 #include <stdio.h>

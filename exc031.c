@@ -1,4 +1,4 @@
-/* 44. Faça um programa que calcule o desvio padrão de um vetor v contendo n=10 números, onde m e a
+/* 31. Faça um programa que calcule o desvio padrão de um vetor v contendo n=10 números, onde m e a
 média do vetor. */
 #include <stdio.h>
 #include <math.h>

@@ -1,4 +1,4 @@
-/* 33.Faça um programa que receba 20 números inteiros e, utilizando a função exibir(), mostre: Os números pares
+/* 38.Faça um programa que receba 20 números inteiros e, utilizando a função exibir(), mostre: Os números pares
 digitados; A soma dos números pares digitados; Os números ímpares digitados; A quantidade de números
 ímpares digitados. Acesse o vetor utilizando ponteiros. */
 #include <stdio.h>

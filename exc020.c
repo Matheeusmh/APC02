@@ -28,3 +28,4 @@ void troca(int *a1, int *b1)
     *a1 = *b1;     // O conteúdo de "a" recebendo o conteúdo de "b"
     *b1 = aux;     // O conteúdo de "b" recebendo o conteúdo de "aux"
 }
+ 

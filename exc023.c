@@ -28,3 +28,4 @@ int fatorial(int resultado)
         return (resultado *= fatorial(resultado - 1));
     }
 }
+ 

@@ -1,4 +1,4 @@
-/* 47. Construa um programa que receba da linha de comando, com a qual o programa é executado, três
+/* 29. Construa um programa que receba da linha de comando, com a qual o programa é executado, três
 valores em ponto flutuante, verifique por meio de uma função chamada triangulo() qual seu tipo, e informe
 na saída padrão se estes podem ou não formar os lados de um triângulo e qual tipo seria: Equilátero,
 Isósceles ou Escaleno. Os valores devem ser passados para a função triangulo() por meio de ponteiros. */

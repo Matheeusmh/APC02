@@ -72,3 +72,4 @@ void ordenar(int *vet)
         }
     }
 }
+ 

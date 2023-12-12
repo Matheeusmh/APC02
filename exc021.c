@@ -48,3 +48,4 @@ void inverterS(char *palavra, int *tamanho)
             break;
     }
 }
+ 

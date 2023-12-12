@@ -1,4 +1,4 @@
-/* 28. Realize o cálculo da pontência usando recursão.*/
+/* 27. Realize o cálculo da pontência usando recursão.*/
 #include <stdio.h>
 
 int pow(int base, int expo, int aux);

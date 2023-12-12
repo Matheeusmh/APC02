@@ -1,4 +1,4 @@
-/* 45. Faça um programa que receba a entrada utilizando argc argv. Por exemplo, dada uma entrada no
+/* 44. Faça um programa que receba a entrada utilizando argc argv. Por exemplo, dada uma entrada no
 formato (Dia Mês Ano) 28 08 2022 retorne 28 de agosto de 2022. Faça verificação de erros para o número
 de parâmetros e para datas não válidas (28 08 2022). */
 #include <stdio.h>

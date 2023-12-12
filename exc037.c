@@ -1,4 +1,4 @@
-/* 35. Leia dois vetores de inteiros x e y, cada um com 10 elementos (verifique e não permita que o usuário informe
+/* 37. Leia dois vetores de inteiros x e y, cada um com 10 elementos (verifique e não permita que o usuário informe
 elementos repetidos). Calcule e mostre os vetores resultantes em cada caso abaixo, utilize uma função menu()
 para chamar cada função e manipule o vetor nas funções com o uso de ponteiros: Soma() -> soma de cada
 elemento de x com o elemento da mesma posição em y. Produto() -> multiplicação de cada elemento de x

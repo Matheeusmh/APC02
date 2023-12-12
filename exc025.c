@@ -1,4 +1,4 @@
-/* 2. Implemente um código para realizar a soma do inteiro digitado
+/* 25. Implemente um código para realizar a soma do inteiro digitado
 com seus antecessores. Use ponteiros.*/
 #include <stdio.h>
 

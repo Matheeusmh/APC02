@@ -1,4 +1,4 @@
-/* 34.Faça um programa que leia dois vetores de 10 elementos. Crie um terceiro vetor, ainda no main(), que seja a
+/* 40.Faça um programa que leia dois vetores de 10 elementos. Crie um terceiro vetor, ainda no main(), que seja a
 intersecção entre os 2 vetores anteriores, ou seja, que contêm apenas os números que estão em ambos os
 vetores, não devendo conter números repetidos. A verificação da intersecção e armazenamento no vetor deve
 ser feito por meio da função intersecção() e os vetores manipulados nessa função com ponteiros. */

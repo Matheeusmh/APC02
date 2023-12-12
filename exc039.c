@@ -1,4 +1,4 @@
-/* 32. Leia 10 números inteiros e armazene em um vetor. Por meio da função primo() e utilizando ponteiros imprima
+/* 39. Leia 10 números inteiros e armazene em um vetor. Por meio da função primo() e utilizando ponteiros imprima
 na tela os elementos que são primos e suas respectivas posições no vetor. */
 #include <stdio.h>
 

@@ -43,3 +43,4 @@ void calcula(float *raio, float *altura, float *area, float *litros, float *cust
     *litros = (int)((*area / 3) / 5) + 1;                                // Cálculo de latas gastas;
     *custo = *litros * 20;                                               // Cálculo do custo de pintura.
 }
+ 

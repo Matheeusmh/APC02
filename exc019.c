@@ -77,3 +77,4 @@ void verifica(int *vet, int *n, int *x)
     }
     printf("\n");
 }
+ 
