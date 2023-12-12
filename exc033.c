@@ -1,13 +1,4 @@
-/*-------------------------------------------------------------------------
-Aluno: Matheus Henrique de Andrade Pires
-Matrícula: 202301138
-Turma:  IBT0007 - ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES 2 (2023 .2 - TA)
-        IBT0209 - LABORATÓRIO DE PROGRAMAÇÃO 2 (2023 .2 - TA)
-Curso: Ciência da Computação
-UFCAT - Universidade Federal de Catalão
-Data de criação: 20/11/2023
----------------------------------------------------------------------------
-2.Faça um programa que receba 20 números inteiros e, utilizando a função exibir(), mostre: Os números pares
+/* 33.Faça um programa que receba 20 números inteiros e, utilizando a função exibir(), mostre: Os números pares
 digitados; A soma dos números pares digitados; Os números ímpares digitados; A quantidade de números
 ímpares digitados. Acesse o vetor utilizando ponteiros. */
 #include <stdio.h>

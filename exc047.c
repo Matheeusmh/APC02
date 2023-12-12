@@ -1,13 +1,4 @@
-/*-------------------------------------------------------------------------
-Aluno: Matheus Henrique de Andrade Pires
-Matrícula: 202301138
-Turma: IBT0007 - ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES 2 (2023 .2 - TA)
-        IBT0209 - LABORATÓRIO DE PROGRAMAÇÃO 2 (2023 .2 - TA)
-Curso: Ciência da Computação
-UFCAT - Universidade Federal de Catalão
-Data de criação: 22/11/2023
----------------------------------------------------------------------------
-16. Construa um programa que receba da linha de comando, com a qual o programa é executado, três
+/* 47. Construa um programa que receba da linha de comando, com a qual o programa é executado, três
 valores em ponto flutuante, verifique por meio de uma função chamada triangulo() qual seu tipo, e informe
 na saída padrão se estes podem ou não formar os lados de um triângulo e qual tipo seria: Equilátero,
 Isósceles ou Escaleno. Os valores devem ser passados para a função triangulo() por meio de ponteiros. */

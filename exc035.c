@@ -1,13 +1,4 @@
-/*-------------------------------------------------------------------------
-Aluno: Matheus Henrique de Andrade Pires
-Matrícula: 202301138
-Turma:  IBT0007 - ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES 2 (2023 .2 - TA)
-        IBT0209 - LABORATÓRIO DE PROGRAMAÇÃO 2 (2023 .2 - TA)
-Curso: Ciência da Computação
-UFCAT - Universidade Federal de Catalão
-Data de criação: 21/11/2023
----------------------------------------------------------------------------
-4. Leia dois vetores de inteiros x e y, cada um com 10 elementos (verifique e não permita que o usuário informe
+/* 35. Leia dois vetores de inteiros x e y, cada um com 10 elementos (verifique e não permita que o usuário informe
 elementos repetidos). Calcule e mostre os vetores resultantes em cada caso abaixo, utilize uma função menu()
 para chamar cada função e manipule o vetor nas funções com o uso de ponteiros: Soma() -> soma de cada
 elemento de x com o elemento da mesma posição em y. Produto() -> multiplicação de cada elemento de x

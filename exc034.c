@@ -1,13 +1,4 @@
-/*-------------------------------------------------------------------------
-Aluno: Matheus Henrique de Andrade Pires
-Matrícula: 202301138
-Turma:  IBT0007 - ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES 2 (2023 .2 - TA)
-        IBT0209 - LABORATÓRIO DE PROGRAMAÇÃO 2 (2023 .2 - TA)
-Curso: Ciência da Computação
-UFCAT - Universidade Federal de Catalão
-Data de criação: 20/11/2023
----------------------------------------------------------------------------
-3.Faça um programa que leia dois vetores de 10 elementos. Crie um terceiro vetor, ainda no main(), que seja a
+/* 34.Faça um programa que leia dois vetores de 10 elementos. Crie um terceiro vetor, ainda no main(), que seja a
 intersecção entre os 2 vetores anteriores, ou seja, que contêm apenas os números que estão em ambos os
 vetores, não devendo conter números repetidos. A verificação da intersecção e armazenamento no vetor deve
 ser feito por meio da função intersecção() e os vetores manipulados nessa função com ponteiros. */

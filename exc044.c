@@ -1,13 +1,4 @@
-/*-------------------------------------------------------------------------
-Aluno: Matheus Henrique de Andrade Pires
-Matrícula: 202301138
-Turma:  IBT0007 - ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES 2 (2023 .2 - TA)
-        IBT0209 - LABORATÓRIO DE PROGRAMAÇÃO 2 (2023 .2 - TA)
-Curso: Ciência da Computação
-UFCAT - Universidade Federal de Catalão
-Data de criação: 22/11/2023
----------------------------------------------------------------------------
-13. Faça um programa que calcule o desvio padrão de um vetor v contendo n=10 números, onde m e a
+/* 44. Faça um programa que calcule o desvio padrão de um vetor v contendo n=10 números, onde m e a
 média do vetor. */
 #include <stdio.h>
 #include <math.h>

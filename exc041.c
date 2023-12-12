@@ -1,13 +1,4 @@
-/*-------------------------------------------------------------------------
-Aluno: Matheus Henrique de Andrade Pires
-Matrícula: 202301138
-Turma:  IBT0007 - ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES 2 (2023 .2 - TA)
-        IBT0209 - LABORATÓRIO DE PROGRAMAÇÃO 2 (2023 .2 - TA)
-Curso: Ciência da Computação
-UFCAT - Universidade Federal de Catalão
-Data de criação: 22/11/2023
----------------------------------------------------------------------------
-10. Peça ao usuário para digitar dez valores numéricos e ordene por ordem crescente esses valores,
+/* 41. Peça ao usuário para digitar dez valores numéricos e ordene por ordem crescente esses valores,
 guardando-os num vetor. Por meio da função ordena() e com o uso de ponteiros ordene o número assim
 que ele for digitado. Mostre ao final na tela os valores em ordem, por meio da função imprime().*/
 #include <stdio.h>

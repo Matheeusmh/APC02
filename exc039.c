@@ -1,13 +1,4 @@
-/*-------------------------------------------------------------------------
-Aluno: Matheus Henrique de Andrade Pires
-Matrícula: 202301138
-Turma:  IBT0007 - ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES 2 (2023 .2 - TA)
-        IBT0209 - LABORATÓRIO DE PROGRAMAÇÃO 2 (2023 .2 - TA)
-Curso: Ciência da Computação
-UFCAT - Universidade Federal de Catalão
-Data de criação: 22/11/2023
----------------------------------------------------------------------------
-8. Leia um vetor com 10 números reais, ordene os elementos deste vetor utilizando a função ordena() e no
+/* 39. Leia um vetor com 10 números reais, ordene os elementos deste vetor utilizando a função ordena() e no
 final escreva os elementos do vetor ordenado com o uso da função imprima(). Utilize ponteiros para
 acessar os elementos do vetor nas funções. */
 #include <stdio.h>
