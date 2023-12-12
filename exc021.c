@@ -1,4 +1,4 @@
-/* 18.Crie e teste a função void InverteS(char *s) que retorna uma string invertida, utilizando
+/* 21.Crie e teste a função void InverteS(char *s) que retorna uma string invertida, utilizando
 ponteiros.
 – Por exemplo, se s = “Palindromo”,
 – Após a chamada a função InverteS(), s = “omordnilaP”.*/

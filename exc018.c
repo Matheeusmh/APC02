@@ -1,4 +1,4 @@
-/* 22. Construa um programa que calcule a quantidade de latas de tinta necessárias e o custo para
+/* 18. Construa um programa que calcule a quantidade de latas de tinta necessárias e o custo para
 pintar tanques cilíndricos de combustível. Use ponteiros para envio dos dados a uma função
 calcula(). Onde são fornecidos a altura e o raio desse cilindro.
 – Sabendo que:

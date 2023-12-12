@@ -1,4 +1,4 @@
-/* 21. Faça um programa que tendo como entrada dois pontos quaisquer do plano
+/* 22. Faça um programa que tendo como entrada dois pontos quaisquer do plano
 P(x1,y1) e Q(x2,y2), utilizando ponteiros para passagem dos valores, imprima a
 distância entre eles. Fórmula da distância:*/
 #include <stdio.h>

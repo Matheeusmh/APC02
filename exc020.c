@@ -1,4 +1,4 @@
-/* 19.Faça um programa que dado 2 variáveis inteiras a=2 e b=3, use a função void troca(int
+/* 20.Faça um programa que dado 2 variáveis inteiras a=2 e b=3, use a função void troca(int
 *a1, int *b1), que deve fazer a inversão dos valores de a e b. Após a chamada da função,
 imprimir os valores de a e b. A função troca também deve ser implementada e deve ter
 tipo de retorno void. Todas as manipulações deve se dar usando ponteiros.

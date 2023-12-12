@@ -1,4 +1,4 @@
-/* 20. Fazer uma função que recebe 3 parâmetros: um vetor de inteiros, um número inteiro n
+/* 19. Fazer uma função que recebe 3 parâmetros: um vetor de inteiros, um número inteiro n
 enviado com passagem por valor e outro número x enviado como passagem por
 referência. Em uma função verifica(), envie todos os elementos utilizando ponteiros para
 suas manipulações e veja se os números n e x estão no vetor e imprima se estiver.*/

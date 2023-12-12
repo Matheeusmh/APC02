@@ -1,4 +1,5 @@
-/* 23. Escreva um programa que lê três números inteiros do teclado e, utilizando uma função e
+/* 17
+. Escreva um programa que lê três números inteiros do teclado e, utilizando uma função e
 acessando os números no vetor por meio de ponteiros, ordene os três números e imprima-os
 em ordem crescente. */
 #include <stdio.h>
